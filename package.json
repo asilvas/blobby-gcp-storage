@@ -1,0 +1,43 @@
+{
+  "name": "blobby-gcp-storage",
+  "version": "0.4.0",
+  "description": "An GCP Storage client for Blobby, powered by Google Cloud",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel ./src --out-dir ./lib",
+    "clean": "rimraf ./lib",
+    "prepublish": "npm run clean && npm run build",
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "babel ./src --out-dir ./lib --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asilvas/blobby-gcp-storage.git"
+  },
+  "author": "Aaron Silvas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asilvas/blobby-gcp-storage/issues"
+  },
+  "homepage": "https://github.com/asilvas/blobby-gcp-storage#readme",
+  "dependencies": {
+    "@google-cloud/storage": "^1.2.1",
+    "fast-crc32c": "^1.0.4",
+    "once": "^1.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.3.3",
+    "rimraf": "^2.6.1"
+  },
+  "files": [
+    "lib",
+    "src",
+    "index.js",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ]
+}
