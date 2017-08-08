@@ -205,7 +205,7 @@ export default class BlobbyGCPStorage {
       protocol: 'http:',
       host: 'storage.googleapis.com',
       method,
-      path: `/${this.options.bucket}/${fileKey}`
+      path: encodeURI(`/${this.options.bucket}/${fileKey}`)
     };
     var bufs = [];
     http.request(opts, res => {

@@ -1,6 +1,6 @@
 {
   "name": "blobby-gcp-storage",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "An GCP Storage client for Blobby, powered by Google Cloud",
   "main": "index.js",
   "scripts": {
